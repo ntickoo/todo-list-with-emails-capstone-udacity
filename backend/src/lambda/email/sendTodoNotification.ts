@@ -1,10 +1,10 @@
-import { UserInfoService } from "../../helpers/userInfoService";
+import { UserInfoService } from "../../helpers/service/userInfoService";
 import { UserInfo } from "../../models/UserInfo";
 import { createLogger } from "../../utils/logger";
 import * as ejs from "ejs";
 import { TodoItem } from "../../models/TodoItem";
-import { TodoService } from "../../helpers/todos";
-import { EmailService } from "../../helpers/EmailService";
+import { TodoService } from "../../helpers/service/todos";
+import { EmailService } from "../../helpers/service/EmailService";
 import { EmailTemplate } from "./templates/todo-notification-template";
 
 const logger = createLogger('sendTodoNotificationLambda')

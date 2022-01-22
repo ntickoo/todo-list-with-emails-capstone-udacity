@@ -52,8 +52,8 @@ functions:
     environment:
       SMTP_HOST: smtp.mailtrap.io
       SMTP_PORT: 2525
-      SMTP_USER: 
-      SMTP_PASSWORD: 
+      SMTP_USER: ${file(./secrets.json):smtp-user}
+      SMTP_PASSWORD: ${file(./secrets.json):smtp-password}
     iamRoleStatementsInherit: true
     iamRoleStatements:
       - Effect: Allow
@@ -69,7 +69,7 @@ functions:
     handler: src/lambda/auth/auth0Authorizer.handler
     environment:
       AUTH0_JWKS_URL: https://dev-khi6bovt.us.auth0.com/.well-known/jwks.json
-      AUTH0_JWKS_KID: 3qcegU0Kib2MwzDUIoNT_
+      AUTH0_JWKS_KID: ${file(./secrets.json):auth0-jwks-keyid}
   # TODO: Configure this function - 
   # Provide iamRoleStatements property for performing Actions on DynamoDB
   GetTodos:

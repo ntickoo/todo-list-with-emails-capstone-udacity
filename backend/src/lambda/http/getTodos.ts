@@ -6,7 +6,7 @@ import { cors } from 'middy/middlewares'
 
 import { getUserId} from '../utils';
 import { createLogger } from '../../utils/logger'
-import { TodoService } from '../../helpers/todos'
+import { TodoService } from '../../helpers/service/todos'
 
 const logger = createLogger('auth')
 

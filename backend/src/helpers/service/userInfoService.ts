@@ -1,7 +1,7 @@
-import { SaveUserInfoRequest } from "../requests/SaveUserInfoRequest"
-import { UserInfo } from "../models/UserInfo"
-import { createLogger } from "../utils/logger";
-import { UserInfoAccess } from "./userInfoAcess";
+import { SaveUserInfoRequest } from "../../requests/SaveUserInfoRequest"
+import { UserInfo } from "../../models/UserInfo"
+import { createLogger } from "../../utils/logger";
+import { UserInfoAccess } from "../dao/userInfoAcess";
 
 const logger = createLogger('UserInfoService')
 

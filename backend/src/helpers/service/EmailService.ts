@@ -1,5 +1,5 @@
 import * as nodemailer from 'nodemailer';
-import { Email } from '../models/Email';
+import { Email } from '../../models/Email';
 
 const smtphost      = process.env.SMTP_HOST;
 const smtpport      = Number(process.env.SMTP_PORT);

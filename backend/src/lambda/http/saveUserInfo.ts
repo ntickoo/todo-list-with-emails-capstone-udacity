@@ -5,7 +5,7 @@ import { cors } from 'middy/middlewares'
 import { SaveUserInfoRequest } from '../../requests/SaveUserInfoRequest'
 import { getUserId } from '../utils';
 import { createLogger } from '../../utils/logger'
-import { UserInfoService } from '../../helpers/userInfoService'
+import { UserInfoService } from '../../helpers/service/userInfoService'
 import { UserInfo } from '../../models/UserInfo'
 
 const logger = createLogger('userInfoLambda')

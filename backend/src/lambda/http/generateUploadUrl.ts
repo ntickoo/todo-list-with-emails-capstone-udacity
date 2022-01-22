@@ -7,7 +7,7 @@ import * as uuid from 'uuid'
 import { createAttachmentPresignedUrl } from '../../helpers/attachmentUtils'
 import { getUserId } from '../utils'
 import { createLogger } from '../../utils/logger'
-import { TodoService } from '../../helpers/todos'
+import { TodoService } from '../../helpers/service/todos'
 
 const logger = createLogger('auth')
 

@@ -1,8 +1,8 @@
-import { TodosAccess } from './todosAcess'
-import { TodoItem } from '../models/TodoItem'
-import { CreateTodoRequest } from '../requests/CreateTodoRequest'
-import { UpdateTodoRequest } from '../requests/UpdateTodoRequest'
-import { createLogger } from '../utils/logger'
+import { TodosAccess } from '../dao/todosAcess'
+import { TodoItem } from '../../models/TodoItem'
+import { CreateTodoRequest } from '../../requests/CreateTodoRequest'
+import { UpdateTodoRequest } from '../../requests/UpdateTodoRequest'
+import { createLogger } from '../../utils/logger'
 import * as uuid from 'uuid'
 
 // TODO: Implement businessLogic
